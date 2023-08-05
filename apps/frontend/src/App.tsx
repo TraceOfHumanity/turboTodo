@@ -6,10 +6,10 @@ function App() {
     <>
       <button onClick={async () => {
         const res = await fetch('/api')
-        const data = await res.json()
+        const data = await res.text()
         console.log(data)
       }
-      }>Fetch</button>
+      } className='bg-red-600' >Fetch</button>
 
     </>
   )
